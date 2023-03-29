@@ -1,13 +1,16 @@
 # Lift3D: Synthesize 3D Training Data by Lifting 2D GAN to 3D Generative Radiance Field
 
+[[Paper](https://len-li.github.io/assets/pdf/lift3d_final.pdf)]
+[[Project Page](https://len-li.github.io/lift3d-web/)]
+
+
 <img src="./assets/lift3d_method.png"/>
 
 
 > **Lift3D: Synthesize 3D Training Data by Lifting 2D GAN to 3D Generative Radiance Field** <br>
 > Leheng Li, Qing Lian, Luozhou Wang, Ningning Ma, Ying-Cong Chen <br>
+> CVPR2023 <br>
 
-[[Paper](https://len-li.github.io/assets/pdf/lift3d_final.pdf)]
-[[Project Page](https://len-li.github.io/lift3d-web/)]
 
 This work explores the use of 3D generative models to synthesize training data for 3D vision tasks. The key requirements of the generative models are that the generated data should be photorealistic to match the real-world scenarios, and the corresponding 3D attributes should be aligned with given sampling labels. However, we find that the recent NeRF-based 3D GANs hardly meet the above requirements due to their designed generation pipeline and the lack of explicit 3D supervision.
 
