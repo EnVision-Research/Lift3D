@@ -1,6 +1,6 @@
 # Lift3D: Synthesize 3D Training Data by Lifting 2D GAN to 3D Generative Radiance Field
 
-<img src="./docs/contents/framework.jpg"/>
+<img src="./assets/lift3d_method.png"/>
 
 
 > **Lift3D: Synthesize 3D Training Data by Lifting 2D GAN to 3D Generative Radiance Field** <br>
@@ -17,15 +17,9 @@ We evaluate the effectiveness of our framework by augmenting autonomous driving 
 
 ## Results
 
-Qualitative comparison with EG-3D and Giraffe.
-<img src="./docs/contents/fig_comparison.png"/>
+The images are composited by our generated objects and original background.
+<img src="./assets/lift3d_compos.png"/>
 
-Controllable scene synthesis.
-<img src="./docs/contents/object-editing-v3-a.jpg"/>
-<img src="./docs/contents/object-editing-v3-b.jpg"/>
-
-Real image inversion and editing.
-<img src="./docs/contents/inversion.jpg"/>
 
 
 
