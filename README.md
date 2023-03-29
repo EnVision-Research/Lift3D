@@ -17,8 +17,8 @@ We evaluate the effectiveness of our framework by augmenting autonomous driving 
 
 ## Results
 
-The images are composited by our generated objects and original background.
 <img src="./assets/lift3d_compos.png"/>
+The images are composited by our generated objects and original background.
 
 
 
