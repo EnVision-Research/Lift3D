@@ -1,6 +1,7 @@
 # Lift3D: Synthesize 3D Training Data by Lifting 2D GAN to 3D Generative Radiance Field
 
 code will be released s∞n.
+
 [[Paper](https://len-li.github.io/assets/pdf/lift3d_final.pdf)]
 [[Project Page](https://len-li.github.io/lift3d-web/)]
 
