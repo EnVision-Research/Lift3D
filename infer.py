@@ -1,3 +1,4 @@
+import os
 import torch
 import tqdm
 import numpy as np
@@ -15,31 +16,23 @@ from utils import (
 
 from torchvision import utils
 
+os.makedirs('test_out', exist_ok=True)
 
 opt = BaseOptions().parse()
 opt.rendering.N_samples = 64
 
-
-generator = Model(opt.rendering, opt.model.style_dim)
-
-
-lc_list = []
 lc_loca = "./ckp/obj_latent.pth"
 lc_template = torch.load(lc_loca, map_location="cpu")
-
-
-generator.whether_train = False
-generator.cutpaste = False
-
 ckpt_path = "./ckp/lift3d_ckp.pt"
 ckpt = torch.load(ckpt_path, map_location="cpu")
+
+generator = Model(opt.rendering, opt.model.style_dim)
+generator.whether_train = False
+generator.cutpaste = False
 generator.load_state_dict(ckpt)
-
-
 generator.require_grad = False
 device = "cuda" if torch.cuda.is_available() else "cpu"
 generator = generator.to(device)
-
 
 for curr_pose_id in tqdm.tqdm(range(0, 100)):
 

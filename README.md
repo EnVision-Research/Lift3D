@@ -36,7 +36,7 @@ Please download `lift3d_ckp.pt` and `obj_latent.pth`, then put them in the folde
 ```
 python infer.py
 ```
-
+The rendered images and semantic mask are saved in the folder `test_out`.
 
 ## Acknowledgment
 Additionally, we express our gratitude to the authors of the following opensource projects:
