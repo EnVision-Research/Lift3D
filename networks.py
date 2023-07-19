@@ -337,11 +337,9 @@ class Lift3D(nn.Module):
                 return raw
 
         else:  # inference planes (training stage)
-            # import ipdb; ipdb.set_trace()
             styles = styles[:, 4:, :] if self.plane_reso < 256 else styles[:, 2:, :]
 
             planes = self.backbone(styles, None)
-            # planes = self.backbone(styles[:, 2:, :], None)
             planes = planes.view(
                 len(planes), 3, self.plane_chann, planes.shape[-2], planes.shape[-1]
             )
