@@ -245,10 +245,11 @@ class Lift3D(nn.Module):
 
         self.mask = rectangle()
         self.mask = cv2.GaussianBlur(self.mask, (5, 5), 0)
-        self.shadowmap = cv2.imread(
-            "/home/abc/adv3d/lift3d/models/shadowmap.png", cv2.IMREAD_GRAYSCALE
-        )
-        self.shadowmap = cv2.resize(self.shadowmap, (500, 500))[..., None]
+        # self.shadowmap = cv2.imread(
+        #     "/home/abc/adv3d/lift3d/models/shadowmap.png", cv2.IMREAD_GRAYSCALE
+        # )
+        # self.shadowmap = cv2.resize(self.shadowmap, (500, 500))[..., None]
+        self.shadowmap = None
 
     def get_eikonal_term(self, pts, sdf):
         eikonal_term = autograd.grad(
